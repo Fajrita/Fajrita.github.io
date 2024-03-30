@@ -1,0 +1,15 @@
+// :root {
+//     // --black: rgba(1, 18, 30, 1);
+//     // --green: #3EB049;
+//     // --dark-blue: #0A6496; 
+//     // --light-blue: rgba(85, 161, 215, 1);
+//     // --light-gray: rgba(247, 247, 247, 1);
+//     // --sombra: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+//     // --yellow: rgba(249, 185, 94, 1);
+
+//   }
+  
+  $theme-colors: (
+  'primary': rgb(169, 36, 36),
+);
+@import '/node_modules/bootstrap/scss/bootstrap.scss';

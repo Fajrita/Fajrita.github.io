@@ -1,0 +1,146 @@
+body{
+    background-color: #2d2d2d;
+    color: #ffff;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+
+img {
+    width: auto;
+    height: auto;
+}
+.img--cover {
+    object-fit: cover;
+  }
+h1 {
+    text-align: center;
+    font-size: 5vw;
+}
+p {
+    text-align: center;
+}
+.icon {
+    font-size: 5vw;
+    color: rgb(169, 36, 36);
+}
+
+/* skill section*/
+#skills, #demo {
+    background-color: rgb(230, 230, 230);
+    color: #2d2d2d;
+}
+.section-title-border {
+    width: 80px;
+    height: 4px;
+    background: rgb(169, 36, 36);
+    bottom: 0;
+    left: 0;
+  }
+img.skill-img {
+    height: 100px;
+    width: auto;
+    padding: 20px;
+  }
+
+.skill-paragraph {
+    text-align: start;
+    padding-right: 1rem;
+    margin-bottom: 5px;
+  }
+  .skill-year {
+    font-style: italic;
+
+  }
+
+  /* gallery section*/
+  #gallery {
+    padding-left: 0;
+    padding-right: 0;
+}
+#portfolio-flters {
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: rgb(230, 230, 230);
+    border-radius: 50px;
+    padding: 2px 15px;
+  }
+  #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px 6px 20px;
+    font-size: large;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #2d2d2d;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+#portfolio-flters li:hover,
+ #portfolio-flters li.filter-active {
+    color: rgb(169, 36, 36);
+  }
+  
+#portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+
+  .gallery-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    padding: 0.6%;
+  }
+  .gallery-container::before {
+    content: '';
+    display: flex;
+    padding-top: 100%; /* This creates a 1:1 aspect ratio based on the width of the container */
+  }
+
+ /* demo section*/
+
+  .demo-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .demo-display {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    padding: 0.6%;
+  }
+  .demo-container::before {
+    content: '';
+    display: flex;
+    padding-top: 65%; /* This creates a 1:1 aspect ratio based on the width of the container */
+  }
+
+  .demo-paragraph {
+    text-align: start;
+  }
+
+  /* contact section*/
+a {
+  color: rgb(230, 230, 230);
+}
+
