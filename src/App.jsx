@@ -286,7 +286,7 @@ function App() {
             {filteredImages.map((image, index) => (
               <div
                 key={index}
-                className={`gallery-container col-12 col-sm-6 col-md-4 col-lg-3  filter-${image.filter}`}
+                className={`gallery-container d-flex col-12 col-sm-6 col-md-4 col-lg-2  filter-${image.filter}`}
                 onClick={() => {
                   setLightboxIndex(index);
                   setLightboxOpen(true);
