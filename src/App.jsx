@@ -355,6 +355,38 @@ function App() {
               </Row>
             </div>
           </Row>
+          <Row className="mt-3">
+            <div className="demo-container col-md-12 col-lg-7 d-inline-flex ">
+              <iframe
+                className="demo-display mx-1"
+                src="https://itch.io/embed-upload/10136374?color=333333"
+                allowfullscreen=""
+                width="960"
+                height="620"
+              >
+                <a href="https://fajrita.itch.io/croco-western"></a>
+              </iframe>
+            </div>
+            <div className="col-md-12 col-lg-5 d-md-inline align-self-center">
+              <Row className="justify-content-center">
+                <iframe
+                  src="https://itch.io/embed/2634017"
+                  width="552"
+                  height="167"
+                >
+                  <a href="https://fajrita.itch.io/croco-western">
+                  Croco Western by Fajrita
+                  </a>
+                </iframe>
+
+                <p className="d-none d-lg-inline demo-paragraph mt-5 px-3">
+                  Modelaje 3D e incorporación en Unity
+                  <br />
+                  Visita virtual en diorama del viejo oeste y ejercicio de creacion de personaje.
+                </p>
+              </Row>
+            </div>
+          </Row>
         </Container>
       </Element>
 
