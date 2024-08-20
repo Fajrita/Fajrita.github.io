@@ -504,7 +504,7 @@ function App() {
                         size="2x"
                       />
                       </a>
-                    <h6 className="pt-1 px-2 d-inline">
+                    <h6 className="pt-2 px-2 d-inline">
                       Fernanda Fajre
                     </h6>
                   </div>
