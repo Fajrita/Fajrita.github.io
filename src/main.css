@@ -147,6 +147,14 @@ img.skill-img {
     text-align: start;
   }
 
+
+  .contact-icon {
+    color: #2d2d2d;
+  }
+  .contact-icon :hover {
+      color: rgb(169, 36, 36);
+  }
+
   /* contact section*/
 a {
   color: #2d2d2d;
