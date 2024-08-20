@@ -18,7 +18,7 @@ function Navi() {
     return (
         <>
           <Navbar fixed="top" id='nav' bg="primary" data-bs-theme="dark">
-            <Container className="d-flex justify-content-start">
+            <Container className=" justify-content-start d-none d-md-flex">
               <Navbar.Brand className="nav-title" onClick={() => scrollToSection('hero')}>Fernanda Fajre</Navbar.Brand>
               <Nav className=" nav-links me-auto d-flex justify-content-start">
                 <Nav.Link className="px-3" onClick={() => scrollToSection('skills')}>Habilidades</Nav.Link>

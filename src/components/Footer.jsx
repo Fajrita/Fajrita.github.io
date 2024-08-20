@@ -6,7 +6,7 @@ function Footer() {
         <>
           <Navbar id='nav' bg="primary" data-bs-theme="dark">
             <Container className="d-flex justify-content-end" >
-              <Navbar.Brand className="footer-title" href="/">2023 - Fernanda Fajre</Navbar.Brand>
+              <Navbar.Brand className="footer-title" href="/">2024 - Fernanda Fajre</Navbar.Brand>
             </Container>
           </Navbar>
         </>

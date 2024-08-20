@@ -23,6 +23,10 @@ p {
     text-align: center;
 }
 .icon {
+  font-size: 5vw;
+  color: #2d2d2d;
+}
+.icon :hover {
     font-size: 5vw;
     color: rgb(169, 36, 36);
 }
@@ -32,6 +36,10 @@ p {
     background-color: rgb(230, 230, 230);
     color: #2d2d2d;
 }
+#hero, #gallery, #contact{
+  background-color: rgb(230, 230, 230);
+  color: #2d2d2d;
+}
 .section-title-border {
     width: 80px;
     height: 4px;
@@ -40,7 +48,7 @@ p {
     left: 0;
   }
 img.skill-img {
-    height: 100px;
+    height: 70px;
     width: auto;
     padding: 20px;
   }
@@ -141,6 +149,9 @@ img.skill-img {
 
   /* contact section*/
 a {
-  color: rgb(230, 230, 230);
+  color: #2d2d2d;
+}
+a:hover {
+  color: rgb(169, 36, 36);
 }
 
