@@ -25,8 +25,11 @@ function App() {
 
   return (
     <>
-      <Container fluid id="total" className="d-flex justify-content-center m-0 p-0">
-
+      <Container
+        fluid
+        id="total"
+        className="d-flex justify-content-center m-0 p-0"
+      >
         <div className=" col-sm-12 col-lg-8 col-sm-10 m-0 p-0">
           {/* === Hero section === */}
           <Element name="hero">
@@ -52,6 +55,11 @@ function App() {
                           Lo que más disfruto a la hora de realizar un proyecto
                           es encontrar soluciones a los desafíos que se van
                           presentando, mientras más simple mejor.
+                          <br />
+                          <br />
+                          <strong>
+                            Actualmente Lead Programer en NightWave Games
+                          </strong>
                         </p>
                       </Row>
                     </div>
@@ -115,7 +123,6 @@ function App() {
               </Row>
             </Container>
           </Element>
-
           {/* === skills section === */}
           <Element name="skills">
             <Container fluid id="skills" className="pt-2 pb-3 px-3">
@@ -124,27 +131,26 @@ function App() {
                 <div className="section-title-border"></div>
               </div>
               <Row className="d-none d-lg-inline m-0">
-                    <p className="skill-paragraph mb-4">
-                      Empecé mi camino en la arquitectura y el diseño digital,
-                      siempre con una gran pasión por la tecnología y en
-                      especial los videojuegos, lo que me llevó a aprender
-                      programación web y C#. Con este mix de conocimientos puedo
-                      comprender la totalidad de un proyecto y enlazar el arte
-                      con la tecnica.
-                      <br />
-                      <br />
-                      Soy alguien muy curioso y estoy aprendiendo sobre
-                      distintas cosas constántemente, por eso me considero
-                      alguien multidisiplinario. Pues para realizar un buen
-                      videojuego no solo hay que saber de juegos, tambien hay
-                      que saber de historia, cultura, psicología, estética y
-                      quién sabe que más. Un proyecto es un mundo en sí mismo.
-                    </p>
-                  </Row>
+                <p className="skill-paragraph mb-4">
+                  Empecé mi camino en la arquitectura y el diseño digital,
+                  siempre con una gran pasión por la tecnología y en especial
+                  los videojuegos, lo que me llevó a aprender programación web y
+                  C#. Con este mix de conocimientos puedo comprender la
+                  totalidad de un proyecto y enlazar el arte con la tecnica.
+                  <br />
+                  <br />
+                  Soy alguien muy curioso y estoy aprendiendo sobre distintas
+                  cosas constántemente, por eso me considero alguien
+                  multidisiplinario. Pues para realizar un buen videojuego no
+                  solo hay que saber de juegos, tambien hay que saber de
+                  historia, cultura, psicología, estética y quién sabe que más.
+                  Un proyecto es un mundo en sí mismo.
+                </p>
+              </Row>
               <Row>
                 <div className="col-md-12 col-lg-6 col-xl-6 mb-sm-4">
                   <div className="col-12">
-                    <h4>Deserrollo de Videojuegos</h4>
+                    <h4>Desarrollo de Videojuegos</h4>
                   </div>
                   <Row className="mb-3">
                     <img
@@ -273,7 +279,152 @@ function App() {
               </Row>
             </Container>
           </Element>
+          {/* === Demo section === */}
+          <Element name="demo">
+            <Container fluid id="demo" className="pt-2 pb-3 px-3">
+              <div className="section-title pt-5 pb-1 mb-4">
+                <h2>Juegos</h2>
+                <div className="section-title-border"></div>
+              </div>
+              <Row className="mt-3">
+                <div className="col-12 ">
+                  <Row className="justify-content-center">
+                    <iframe
+                      className="col-lg-10 col-md-12"
+                      src="https://itch.io/embed/2953132"
+                      width="552"
+                      height="167"
+                    >
+                      <a href="https://nightwavegames.itch.io/chromatic-battles">
+                        Chromatic Battles by Night Wave Games
+                      </a>
+                    </iframe>
+                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
+                      Juego desarrollado en NightWave Games - En curso
+                      <br />
+                      Tower defense espacial dondecontrolar el giro de tu torre
+                      y cambiar el color de las armas para que calce con el de
+                      los enemigos son las mecanicas principales.
+                      <br />
+                      Realice toda la programacion de enemigos, armas, niveles,
+                      tienda y sistema de guardado. Posee un Demo y se encuentra
+                      en proceso de ser terminado.
+                    </p>
+                  </Row>
+                </div>
+              </Row>
+              <Row className="mt-3">
+                <div className="col-12 ">
+                  <Row className="justify-content-center">
+                    <iframe
+                      className="col-lg-10 col-md-12"
+                      src="https://itch.io/embed/2665740"
+                      width="552"
+                      height="167"
+                    >
+                      <a href="https://fajrita.itch.io/labrats">
+                        LabRats by Fajrita
+                      </a>
+                    </iframe>
 
+                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
+                      Proyecto GameJam - En curso
+                      <br />
+                      Participacion en GameDev.js GameJam, tema Power.
+                      <br />
+                      Realize el flujo de información entre escenas,
+                      programación UX/UI e integración de assets y audio. <br />
+                      Actualmente se encuentra en proceso de mejora. Integración
+                      de juego Online, personalización de controles,
+                      compatibilidad con mandos y mejoras generales.
+                    </p>
+                  </Row>
+                </div>
+              </Row>
+              <div className="section-title pt-5 pb-1 mb-4">
+                <h2>Otros</h2>
+                <div className="section-title-border"></div>
+              </div>
+              <Row className="mt-3">
+                <div className="col-12 ">
+                  <Row className="justify-content-center">
+                    <iframe
+                      className="col-lg-10 col-md-12"
+                      src="https://itch.io/embed/2891243"
+                      width="552"
+                      height="167"
+                    >
+                      <a href="https://sudokumail.itch.io/zozobra">
+                        Zozobra by Pinky Fairy Studios
+                      </a>
+                    </iframe>
+
+                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
+                      Proyecto GameJam
+                      <br />
+                      Participacion en WomanGameJam, tema TimeLoop.
+                      <br />
+                      Realize la maquina de Estados de enemigos, Interacciónes
+                      inGame, personaje, enemigos, items. Level Design
+                      <br />
+                      Revisiones generales, audio configurado en Wwise.
+                    </p>
+                  </Row>
+                </div>
+              </Row>
+              <Row className="mt-3">
+                <div className="col-12 ">
+                  <Row className="justify-content-center">
+                    <iframe
+                      className="col-lg-10 col-md-12"
+                      src="https://itch.io/embed/2538297"
+                      width="552"
+                      height="167"
+                    >
+                      <a href="https://fajrita.itch.io/shitty-shooter">
+                        Shitty Shooter by Fajrita
+                      </a>
+                    </iframe>
+
+                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
+                      Prototipo
+                      <br />
+                      Ejercicio de programación e integración de assets en Unity
+                      3D. Shooter 3D estilo Doom donde eres un mono que escapa
+                      de veterinarios lanzandoles tus heces
+                      <br />
+                      Exploración en distintos tipos de movimiento. RigidBody,
+                      Transform, Character Controller, Hud basico.
+                    </p>
+                  </Row>
+                </div>
+              </Row>
+              <Row className="mt-3">
+                <div className="col-12 ">
+                  <Row className="justify-content-center">
+                    <iframe
+                      className="col-lg-10 col-md-12"
+                      src="https://itch.io/embed/2634017"
+                      width="552"
+                      height="167"
+                    >
+                      <a href="https://fajrita.itch.io/croco-western">
+                        Croco Western by Fajrita
+                      </a>
+                    </iframe>
+
+                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
+                      Modelaje 3D
+                      <br />
+                      Creación de assets y personaje en 3D, modelado,
+                      texturizado e integración en Unity. <br />
+                      Exploración de iluminación y SFX de ambiente.
+                    </p>
+                  </Row>
+                </div>
+              </Row>
+            </Container>
+          </Element>
           {/* === Gallery section === */}
           <Element name="gallery">
             <Container fluid id="gallery" className="pt-2 pb-3 px-3">
@@ -345,103 +496,6 @@ function App() {
               </Row>
             </Container>
           </Element>
-
-          {/* === Demo section === */}
-          <Element name="demo">
-            <Container fluid id="demo" className="pt-2 pb-3 px-3">
-              <div className="section-title pt-5 pb-1 mb-4">
-                <h2>Demos</h2>
-                <div className="section-title-border"></div>
-              </div>
-              <Row className="mt-3">
-                <div className="col-12 ">
-                  <Row className="justify-content-center">
-                    <iframe className="col-lg-10 col-md-12"
-                      src="https://itch.io/embed/2665740"
-                      width="552"
-                      height="167"
-                    >
-                      <a href="https://fajrita.itch.io/labrats">LabRats by Fajrita</a>
-                    </iframe>
-
-                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
-                      Proyecto GameJam
-                      <br />
-                      Participacion en GameDev.js GameJam, tema Power.<br />
-                      Flujo de información entre escenas, programación UX/UI e integración de assets y audio. <br/>
-                      Actualmente se encuentra en proceso de mejora. Integración de juego Online, personalización de controles, compatibilidad con mandos y mejoras generales.
-                    </p>
-                  </Row>
-                </div>
-              </Row>
-              <Row className="mt-3">
-                <div className="col-12 ">
-                  <Row className="justify-content-center">
-                  <iframe className="col-lg-10 col-md-12"
-                      src="https://itch.io/embed/2891243"
-                      width="552"
-                      height="167"
-                    >
-                      <a href="https://sudokumail.itch.io/zozobra">Zozobra by Pinky Fairy Studios</a>
-                    </iframe>
-
-                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
-                      Proyecto GameJam
-                      <br />
-                      Participacion en WomanGameJam, tema TimeLoop.<br />
-                      Maquina de Estados de enemigos, Interacciónes inGame, personaje, enemigos, items. Level Design<br/>
-                      Revisiones generales, audio configurado en Wwise.
-                    </p>
-                  </Row>
-                </div>
-              </Row>
-              <Row className="mt-3">
-                <div className="col-12 ">
-                  <Row className="justify-content-center">
-                    <iframe className="col-lg-10 col-md-12"
-                      src="https://itch.io/embed/2538297"
-                      width="552"
-                      height="167"
-                    >
-                      <a href="https://fajrita.itch.io/shitty-shooter">
-                        Shitty Shooter by Fajrita
-                      </a>
-                    </iframe>
-
-                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
-                      Prototipo
-                      <br />
-                      Ejercicio de programación e integración de assets en Unity 3D.<br />
-                      Exploración en distintos tipos de movimiento. RigidBody, Transform, Character Controller. 
-                    </p>
-                  </Row>
-                </div>
-              </Row>
-              <Row className="mt-3">
-                <div className="col-12 ">
-                  <Row className="justify-content-center">
-                    <iframe className="col-lg-10 col-md-12"
-                      src="https://itch.io/embed/2634017"
-                      width="552"
-                      height="167"
-                    >
-                      <a href="https://fajrita.itch.io/croco-western">
-                        Croco Western by Fajrita
-                      </a>
-                    </iframe>
-
-                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
-                      Modelaje 3D
-                      <br />
-                      Creación de assets y personaje en 3D, modelado, texturizado e integración en Unity. <br />
-                      Exploración de iluminación y SFX de ambiente.
-                    </p>
-                  </Row>
-                </div>
-              </Row>
-            </Container>
-          </Element>
-
           {/* === Contact section === */}
           <Element name="contact">
             <Container fluid id="contact" className="pt-2 pb-3 px-3">
@@ -479,63 +533,61 @@ function App() {
 
                 <div className="col-4 d-none d-md-block">
                   <div className="d-inline my-2">
-                  <a
-                        href="https://github.com/Fajrita"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                    <a
+                      href="https://github.com/Fajrita"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FontAwesomeIcon
                         className="mx-3 contact-icon"
                         icon="fa-brands fa-github"
                         size="2x"
                       />
-                      </a>
+                    </a>
                     <h6 className="pt-1 px-2 d-inline">Fajrita</h6>
                   </div>
                   <div className="d-flex my-2">
-                  <a
-                        href="https://www.linkedin.com/in/fernanda-fajre/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                    <a
+                      href="https://www.linkedin.com/in/fernanda-fajre/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FontAwesomeIcon
                         className="mx-3 contact-icon"
                         icon="fa-brands fa-linkedin"
                         size="2x"
                       />
-                      </a>
-                    <h6 className="pt-2 px-2 d-inline">
-                      Fernanda Fajre
-                    </h6>
+                    </a>
+                    <h6 className="pt-2 px-2 d-inline">Fernanda Fajre</h6>
                   </div>
                   <div className="d-flex my-2">
-                  <a
-                        href="https://www.artstation.com/fajre"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
+                    <a
+                      href="https://www.artstation.com/fajre"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FontAwesomeIcon
                         className="mx-3 contact-icon"
                         icon="fa-brands fa-artstation"
                         size="2x"
                       />
-                      </a>
+                    </a>
                     <h6 className="pt-1 px-2  d-inline">Fajre</h6>
                   </div>
                 </div>
                 <div className="col-4 d-none d-md-block">
                   <div className="d-flex my-2">
-                  <a
-                        href="https://fajrita.itch.io"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                  <FontAwesomeIcon
-                          className="mx-3 contact-icon "
-                          icon="fa-brands fa-itch-io"
-                          size="2x"
-                        />
-                        </a>
+                    <a
+                      href="https://fajrita.itch.io"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="mx-3 contact-icon "
+                        icon="fa-brands fa-itch-io"
+                        size="2x"
+                      />
+                    </a>
                     <h6 className="pt-1 px-2 d-inline">Fajrita</h6>
                   </div>
                 </div>
@@ -543,7 +595,6 @@ function App() {
             </Container>
           </Element>
         </div>
-
       </Container>
     </>
   );
