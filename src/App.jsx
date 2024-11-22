@@ -2,6 +2,14 @@ import "./main.css";
 import profile from "../public/images/profile.jpg";
 import { Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faHouse } from "@fortawesome/free-solid-svg-icons";
+import {
+  faWhatsapp,
+  faGithub,
+  faLinkedin,
+  faArtstation,
+  faItchIo,
+} from "@fortawesome/free-brands-svg-icons";
 import { Element } from "react-scroll";
 import galleryData from "./GalleryData";
 import Modal from "./components/Modal";
@@ -71,7 +79,7 @@ function App() {
                       />
                     </div>
                   </Row>
-                  <Row className="mt-md-5 mt-sm-1 ">
+                  <Row className="mt-md-5 mt-sm-1">
                     <div className="col-12 p-0 d-flex justify-content-around">
                       <a
                         href="https://github.com/Fajrita"
@@ -80,7 +88,7 @@ function App() {
                       >
                         <FontAwesomeIcon
                           className="icon my-3"
-                          icon="fa-brands fa-github"
+                          icon={faGithub}
                         />
                       </a>
                       <a
@@ -90,10 +98,9 @@ function App() {
                       >
                         <FontAwesomeIcon
                           className="icon my-3"
-                          icon="fa-brands fa-linkedin"
+                          icon={faLinkedin}
                         />
                       </a>
-
                       <a
                         href="https://www.artstation.com/fajre"
                         target="_blank"
@@ -101,7 +108,7 @@ function App() {
                       >
                         <FontAwesomeIcon
                           className="icon my-3"
-                          icon="fa-brands fa-artstation"
+                          icon={faArtstation}
                         />
                       </a>
                       <a
@@ -111,7 +118,7 @@ function App() {
                       >
                         <FontAwesomeIcon
                           className="icon my-3"
-                          icon="fa-brands fa-itch-io"
+                          icon={faItchIo}
                         />
                       </a>
                     </div>
@@ -504,11 +511,12 @@ function App() {
                 <div className="section-title-border"></div>
               </div>
               <Row className="mt-4">
+                {/* Contact Details Column */}
                 <div className="col-12 col-md-4">
                   <div className="d-flex my-2">
                     <FontAwesomeIcon
                       className="mx-3 contact-icon"
-                      icon="fa-solid fa-envelope"
+                      icon={faEnvelope}
                       size="2x"
                     />
                     <h6 className="pt-1 px-2">ffajrec@gmail.com</h6>
@@ -516,7 +524,7 @@ function App() {
                   <div className="d-flex my-2">
                     <FontAwesomeIcon
                       className="mx-3 contact-icon"
-                      icon="fa-brands fa-whatsapp"
+                      icon={faWhatsapp}
                       size="2x"
                     />
                     <h6 className="d-inline pt-1 px-2">+56 984480140</h6>
@@ -524,13 +532,14 @@ function App() {
                   <div className="d-flex my-2">
                     <FontAwesomeIcon
                       className="mx-3 contact-icon"
-                      icon="fa-solid fa-house"
+                      icon={faHouse}
                       size="2x"
                     />
                     <h6 className="d-inline pt-1 px-2">Santiago - Chile</h6>
                   </div>
                 </div>
 
+                {/* GitHub, LinkedIn, ArtStation */}
                 <div className="col-4 d-none d-md-block">
                   <div className="d-inline my-2">
                     <a
@@ -540,7 +549,7 @@ function App() {
                     >
                       <FontAwesomeIcon
                         className="mx-3 contact-icon"
-                        icon="fa-brands fa-github"
+                        icon={faGithub}
                         size="2x"
                       />
                     </a>
@@ -554,7 +563,7 @@ function App() {
                     >
                       <FontAwesomeIcon
                         className="mx-3 contact-icon"
-                        icon="fa-brands fa-linkedin"
+                        icon={faLinkedin}
                         size="2x"
                       />
                     </a>
@@ -568,13 +577,15 @@ function App() {
                     >
                       <FontAwesomeIcon
                         className="mx-3 contact-icon"
-                        icon="fa-brands fa-artstation"
+                        icon={faArtstation}
                         size="2x"
                       />
                     </a>
-                    <h6 className="pt-1 px-2  d-inline">Fajre</h6>
+                    <h6 className="pt-1 px-2 d-inline">Fajre</h6>
                   </div>
                 </div>
+
+                {/* itch.io Column */}
                 <div className="col-4 d-none d-md-block">
                   <div className="d-flex my-2">
                     <a
@@ -583,8 +594,8 @@ function App() {
                       rel="noopener noreferrer"
                     >
                       <FontAwesomeIcon
-                        className="mx-3 contact-icon "
-                        icon="fa-brands fa-itch-io"
+                        className="mx-3 contact-icon"
+                        icon={faItchIo}
                         size="2x"
                       />
                     </a>
