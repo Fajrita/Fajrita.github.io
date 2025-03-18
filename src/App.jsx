@@ -289,7 +289,7 @@ function App() {
           <Element name="demo">
             <Container fluid id="demo" className="pt-2 pb-3 px-3">
               <div className="section-title pt-5 pb-1 mb-4">
-                <h2>Juegos</h2>
+                <h2>Games</h2>
                 <div className="section-title-border"></div>
               </div>
               <Row className="mt-3">
