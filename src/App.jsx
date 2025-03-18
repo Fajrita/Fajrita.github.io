@@ -48,25 +48,25 @@ function App() {
                   <Row className=" justify-content-center pt-3">
                     <div className="col-md-8 col-sm-12">
                       <Row className="d-flex justify-content-center pt-3">
-                        <h1 className="col-10 my-3">
-                          Desarrolladora de Videojuegos
-                        </h1>
+                        <h1 className="col-10 my-3">Video Game Developer</h1>
                       </Row>
                       <Row className="d-flex justify-content-center">
                         <p className="col-10 py-3">
-                          La combinación de mis distintas formaciones es lo que
-                          me permite ver las cosas desde una visión mas amplia.
-                          Aprender de todo un poco para ser alguien más completo
-                          es lo que me llena.
+                          My diverse background enables me to approach
+                          challenges with a broad perspective, allowing me to
+                          create more immersive and innovative experiences. I
+                          believe that continuous learning and versatility are
+                          key to growth.
                           <br />
                           <br />
-                          Lo que más disfruto a la hora de realizar un proyecto
-                          es encontrar soluciones a los desafíos que se van
-                          presentando, mientras más simple mejor.
+                          What I enjoy most about game development is the thrill
+                          of solving complex challenges in the most efficient
+                          and elegant way possible. I strive to turn ideas into
+                          engaging and seamless gameplay experiences.
                           <br />
                           <br />
                           <strong>
-                            Actualmente Lead Programer en NightWave Games
+                            Currently Lead Programmer at NightWave Games
                           </strong>
                         </p>
                       </Row>
@@ -134,30 +134,29 @@ function App() {
           <Element name="skills">
             <Container fluid id="skills" className="pt-2 pb-3 px-3">
               <div className="section-title pt-5 pb-1 mb-4">
-                <h2>Habilidades</h2>
+                <h2>Skills</h2>
                 <div className="section-title-border"></div>
               </div>
               <Row className="d-none d-lg-inline m-0">
                 <p className="skill-paragraph mb-4">
-                  Empecé mi camino en la arquitectura y el diseño digital,
-                  siempre con una gran pasión por la tecnología y en especial
-                  los videojuegos, lo que me llevó a aprender programación web y
-                  C#. Con este mix de conocimientos puedo comprender la
-                  totalidad de un proyecto y enlazar el arte con la tecnica.
+                  My journey began in architecture and digital design, always
+                  driven by a deep passion for technology, especially video
+                  games. This passion led me to learn web development and C#,
+                  allowing me to bridge the gap between art and technology while
+                  understanding the full scope of a project.
                   <br />
-                  <br />
-                  Soy alguien muy curioso y estoy aprendiendo sobre distintas
-                  cosas constántemente, por eso me considero alguien
-                  multidisiplinario. Pues para realizar un buen videojuego no
-                  solo hay que saber de juegos, tambien hay que saber de
-                  historia, cultura, psicología, estética y quién sabe que más.
-                  Un proyecto es un mundo en sí mismo.
+                  <br />I am highly curious and constantly learning about
+                  different fields, which is why I consider myself
+                  multidisciplinary. Creating a great video game requires more
+                  than just game knowledge—it demands an understanding of
+                  history, culture, psychology, aesthetics, and who knows what
+                  else. A project is a world in itself.
                 </p>
               </Row>
               <Row>
                 <div className="col-md-12 col-lg-6 col-xl-6 mb-sm-4">
                   <div className="col-12">
-                    <h4>Desarrollo de Videojuegos</h4>
+                    <h4>Video Game Development</h4>
                   </div>
                   <Row className="mb-3">
                     <img
@@ -172,7 +171,7 @@ function App() {
                     />
                   </Row>
                   <div>
-                    <h4>Diseño Digital 2D y 3D</h4>
+                    <h4>2D & 3D Digital Design</h4>
                   </div>
                   <Row className="mb-3">
                     <img
@@ -212,7 +211,7 @@ function App() {
                     />
                   </Row>
                   <div>
-                    <h4>Programación Web</h4>
+                    <h4>Web Development</h4>
                   </div>
                   <Row>
                     <img
@@ -247,37 +246,37 @@ function App() {
                     />
                   </Row>
                 </div>
-                <div className="col-md-12 col-lg-6 col-xl-6  d-none d-md-inline">
+                <div className="col-md-12 col-lg-6 col-xl-6 d-none d-md-inline">
                   <Row className="m-0">
-                    <h4 className="pb-2">Estudios</h4>
+                    <h4 className="pb-2">Education</h4>
                     <div className="col-lg-6 col-12">
-                      <h6>- Licenciatura en Artes y Humanidades</h6>
-                      <p className="skill-paragraph d-inline-flex  px-2">
+                      <h6>- Bachelor's Degree in Arts and Humanities</h6>
+                      <p className="skill-paragraph d-inline-flex px-2">
                         Pontificia Universidad Católica de Chile
                       </p>
                       <p className="px-1 d-inline-flex skill-year">2013-2018</p>
-                      <h6>- Mayor en Arquitectura</h6>
-                      <p className="skill-paragraph d-inline-flex  px-2">
+                      <h6>- Major in Architecture</h6>
+                      <p className="skill-paragraph d-inline-flex px-2">
                         Pontificia Universidad Católica de Chile
                       </p>
                       <p className="px-1 d-inline-flex skill-year">2013-2018</p>
-                      <h6>- Minor en Estética del Cine</h6>
-                      <p className="skill-paragraph d-inline-flex  px-2">
+                      <h6>- Minor in Film Aesthetics</h6>
+                      <p className="skill-paragraph d-inline-flex px-2">
                         Pontificia Universidad Católica de Chile
                       </p>
                       <p className="px-1 d-inline-flex skill-year">2013-2018</p>
                     </div>
                     <div className="col-lg-6 col-12">
-                      <h6>- Desarrollador Fullstack JAVA</h6>
-                      <p className="skill-paragraph d-inline-flex  px-2">
+                      <h6>- Fullstack JAVA Developer</h6>
+                      <p className="skill-paragraph d-inline-flex px-2">
                         Adalid Bootcamp
                       </p>
                       <p className="px-1 d-inline-flex skill-year">2023</p>
                       <h6>
-                        - Master en Desarrollo y Prgramacion de Videojuegos
+                        - Master's in Video Game Development and Programming
                       </h6>
-                      <p className="skill-paragraph d-inline-flex  px-2">
-                        Centro de Estudios de Innovación
+                      <p className="skill-paragraph d-inline-flex px-2">
+                        Center for Innovation Studies
                       </p>
                       <p className="px-1 d-inline-flex skill-year">2023-2024</p>
                     </div>
@@ -307,15 +306,14 @@ function App() {
                       </a>
                     </iframe>
                     <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
-                      Juego desarrollado en NightWave Games - En curso
+                      Developed at NightWave Games - In Progress
                       <br />
-                      Tower defense espacial dondecontrolar el giro de tu torre
-                      y cambiar el color de las armas para que calce con el de
-                      los enemigos son las mecanicas principales.
-                      <br />
-                      Realice toda la programacion de enemigos, armas, niveles,
-                      tienda y sistema de guardado. Posee un Demo y se encuentra
-                      en proceso de ser terminado.
+                      A space-themed tower defense game where the core mechanics
+                      involve rotating your tower and changing weapon colors to
+                      match enemy colors.
+                      <br />I programmed enemy behavior, weapons, level design,
+                      shop system, and save system. A demo is currently
+                      available, and the game is still in development.
                     </p>
                   </Row>
                 </div>
@@ -333,17 +331,18 @@ function App() {
                         LabRats by Fajrita
                       </a>
                     </iframe>
-
                     <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
-                      Proyecto GameJam - En curso
+                      GameJam Project - In Progress
                       <br />
-                      Participacion en GameDev.js GameJam, tema Power.
+                      Participated in the GameDev.js GameJam with the theme:
+                      Power.
                       <br />
-                      Realize el flujo de información entre escenas,
-                      programación UX/UI e integración de assets y audio. <br />
-                      Actualmente se encuentra en proceso de mejora. Integración
-                      de juego Online, personalización de controles,
-                      compatibilidad con mandos y mejoras generales.
+                      Contributed to scene flow, UX/UI programming, and
+                      asset/audio integration.
+                      <br />
+                      Currently enhancing the game by adding online multiplayer,
+                      customizable controls, gamepad support, and overall
+                      improvements.
                     </p>
                   </Row>
                 </div>
@@ -365,16 +364,16 @@ function App() {
                         Zozobra by Pinky Fairy Studios
                       </a>
                     </iframe>
-
                     <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
-                      Proyecto GameJam
+                      GameJam Project
                       <br />
-                      Participacion en WomanGameJam, tema TimeLoop.
+                      Participated in WomanGameJam, theme: TimeLoop.
                       <br />
-                      Realize la maquina de Estados de enemigos, Interacciónes
-                      inGame, personaje, enemigos, items. Level Design
+                      Developed enemy state machines, in-game interactions,
+                      character and enemy behaviors, and level design.
                       <br />
-                      Revisiones generales, audio configurado en Wwise.
+                      Conducted general reviews and configured audio using
+                      Wwise.
                     </p>
                   </Row>
                 </div>
@@ -392,16 +391,17 @@ function App() {
                         Shitty Shooter by Fajrita
                       </a>
                     </iframe>
-
                     <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
-                      Prototipo
+                      Prototype
                       <br />
-                      Ejercicio de programación e integración de assets en Unity
-                      3D. Shooter 3D estilo Doom donde eres un mono que escapa
-                      de veterinarios lanzandoles tus heces
+                      Programming and asset integration exercise in Unity 3D. A
+                      first-person shooter in the style of Doom, where you play
+                      as a monkey trying to escape from veterinarians by
+                      throwing feces at them.
                       <br />
-                      Exploración en distintos tipos de movimiento. RigidBody,
-                      Transform, Character Controller, Hud basico.
+                      Exploration of different movement systems: RigidBody,
+                      Transform, Character Controller, and the creation of a
+                      basic HUD.
                     </p>
                   </Row>
                 </div>
@@ -419,13 +419,13 @@ function App() {
                         Croco Western by Fajrita
                       </a>
                     </iframe>
-
                     <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
-                      Modelaje 3D
+                      3D Modeling
                       <br />
-                      Creación de assets y personaje en 3D, modelado,
-                      texturizado e integración en Unity. <br />
-                      Exploración de iluminación y SFX de ambiente.
+                      Creation of 3D assets and characters, including modeling,
+                      texturing, and integration into Unity.
+                      <br />
+                      Exploration of lighting and environmental SFX.
                     </p>
                   </Row>
                 </div>
@@ -436,7 +436,7 @@ function App() {
           <Element name="gallery">
             <Container fluid id="gallery" className="pt-2 pb-3 px-3">
               <div className="section-title pt-5 pb-1 mb-4 ">
-                <h2>Galería</h2>
+                <h2>Gallery</h2>
                 <div className="section-title-border"></div>
               </div>
               <Row className="mt-4">
@@ -447,7 +447,7 @@ function App() {
                       className={activeFilter === "*" ? "filter-active" : ""}
                       onClick={() => handleFilterClick("*")}
                     >
-                      Todo
+                      All
                     </li>
                     <li
                       className={activeFilter === "2D" ? "filter-active" : ""}
@@ -507,7 +507,7 @@ function App() {
           <Element name="contact">
             <Container fluid id="contact" className="pt-2 pb-3 px-3">
               <div className="section-title pt-5 pb-1 mb-4">
-                <h2>Contacto</h2>
+                <h2>Contact</h2>
                 <div className="section-title-border"></div>
               </div>
               <Row className="mt-4">

@@ -21,10 +21,10 @@ function Navi() {
             <Container className=" justify-content-start d-none d-md-flex">
               <Navbar.Brand className="nav-title" onClick={() => scrollToSection('hero')}>Fernanda Fajre</Navbar.Brand>
               <Nav className=" nav-links me-auto d-flex justify-content-start">
-                <Nav.Link className="px-3" onClick={() => scrollToSection('skills')}>Habilidades</Nav.Link>
-                <Nav.Link className="px-3" onClick={() => scrollToSection('gallery')}>Galería</Nav.Link>
+                <Nav.Link className="px-3" onClick={() => scrollToSection('skills')}>Skills</Nav.Link>
+                <Nav.Link className="px-3" onClick={() => scrollToSection('gallery')}>Gallery</Nav.Link>
                 <Nav.Link className="px-3" onClick={() => scrollToSection('demo')}>Demos</Nav.Link>
-                <Nav.Link className="px-3" onClick={() => scrollToSection('contact')}>Contacto</Nav.Link>
+                <Nav.Link className="px-3" onClick={() => scrollToSection('contact')}>Contact</Nav.Link>
               </Nav>
             </Container>
           </Navbar>
