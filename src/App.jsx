@@ -1,5 +1,6 @@
 import "./main.css";
 import profile from "../public/images/profile.jpg";
+import MadnessLogo from "../public/images/MyMadnessLogo.png";
 import { Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHouse } from "@fortawesome/free-solid-svg-icons";
@@ -292,6 +293,56 @@ function App() {
                 <h2>Games</h2>
                 <div className="section-title-border"></div>
               </div>
+              <Row className="mt-3">
+                <div className="col-12 ">
+                  <Row className="justify-content-center">
+                    {/* Contenedor principal con display flex */}
+                    <div
+                      className="d-flex align-items-center col-lg-10 col-md-12 "
+                      style={{ backgroundColor: "white" }}>
+                      <div
+                        className="mt-2 mb-2 ps-2"
+                        style={{
+                          width: "180px",
+                          height: "167px",
+                          overflow: "hidden",
+                          flexShrink: 0,
+                        }}>
+                        <img
+                          src={MadnessLogo}
+                          alt="Madness Logo"
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "contain",
+                          }}
+                        />
+                      </div>
+                      <div className=" ps-5 ">
+                        <h4 className="mb-1" style={{fontWeight: "bold"}}>Oh My Madness!</h4>
+                        <p className="mb-1" style={{ fontSize: "13px", textAlign: "left" }}>by <span style={{ fontWeight: "bold" }}>Lions Roar Games</span></p>
+                        <p className="mb-1" style={{ fontSize: "13px" }}>Crazy and fast collectible card game</p>
+                        <p className="mb-2" style={{ fontSize: "13px",textAlign: "left" }}>Available on the Android Play Store</p>
+                        <button className="btn mt-2 mb-0" style={{backgroundColor: "#fa5c5c", color: "white", fontSize:"14px", fontWeight: "bold"}}>Download Now <a href="https://play.google.com/store/apps/details?id=com.LionsRoarGames.ThisIsMadness&pcampaignid=web_share"></a></button>
+                      </div>
+
+                    </div>
+
+                    <p className="col-lg-10 d-none d-lg-inline demo-paragraph mt-2 px-3">
+                     
+                        Developed at Lions Roar Games - In Progress
+                        <br />
+                      Collectible card game, fast-paced with a crazy and random
+                      twist to add diversity to matches. Available on Android
+                      Play Store.
+                      <br />
+                      Lead Programmer - Made in Unity. I handled all
+                      programming, game mechanics, UI interactions, and VFX.
+                    </p>
+                  </Row>
+                </div>
+              </Row>
+
               <Row className="mt-3">
                 <div className="col-12 ">
                   <Row className="justify-content-center">

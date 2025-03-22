@@ -22,8 +22,8 @@ function Navi() {
               <Navbar.Brand className="nav-title" onClick={() => scrollToSection('hero')}>Fernanda Fajre</Navbar.Brand>
               <Nav className=" nav-links me-auto d-flex justify-content-start">
                 <Nav.Link className="px-3" onClick={() => scrollToSection('skills')}>Skills</Nav.Link>
+                <Nav.Link className="px-3" onClick={() => scrollToSection('demo')}>Games</Nav.Link>
                 <Nav.Link className="px-3" onClick={() => scrollToSection('gallery')}>Gallery</Nav.Link>
-                <Nav.Link className="px-3" onClick={() => scrollToSection('demo')}>Demos</Nav.Link>
                 <Nav.Link className="px-3" onClick={() => scrollToSection('contact')}>Contact</Nav.Link>
               </Nav>
             </Container>
