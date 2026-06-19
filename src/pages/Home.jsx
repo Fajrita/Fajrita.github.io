@@ -6,7 +6,7 @@ const featuredProjects = [
   {
     id: 'chromatic-battles',
     title: 'Chromatic Battles',
-    description: '2D color-matching shooter/survival. Defend your ship by rotating and matching bullet hues to enemies. Unlock new colors, upgrade weapons between levels, and face evolving enemy patterns.',
+    description: '2D Color-matching shooter/survival. Defend your ship by rotating and matching bullet hues to enemies. Unlock new colors, upgrade weapons between levels, and face evolving enemy patterns.',
     image: '/images/chromaticBattles.png',
     tech: 'Unity · C# · ScriptableObjects · JSON Save System',
     role: 'Lead Programmer · Core Mechanics'
@@ -19,14 +19,14 @@ const featuredProjects = [
     tech: 'Unity · C# · Netcode for GameObjects',
     role: 'Lead Programmer · UX/UI Designer'
   },
-  {
-    id: 'oh-my-madness',
-    title: 'Oh My Madness!',
-    description: 'Collectible 2D card game for Android where madness reigns. fight your opponent with bizarre cards, and climb a tower of increasing difficulty. Daily missions, card upgrades, and strategic combat.',
-    image: '/images/ohMyMadness.png',
-    tech: 'Unity · C# · UI/UX Mobile',
-    role: 'Lead Programmer · Combat System · NPC'
-  },
+{
+  id: 'oh-my-madness',
+  title: 'Oh My Madness!',
+  description: 'Collectible 2D card game for Android where madness reigns. Fight your opponent with bizarre cards, and climb a tower of increasing difficulty. Daily missions, card upgrades, and strategic combat.',
+  image: '/images/ohMyMadness.png',
+  tech: 'Unity · C# · UI/UX Mobile',
+  role: 'Lead Programmer · Combat System · NPC'
+}
 ];
 
 const Home = () => {
@@ -58,7 +58,7 @@ const Home = () => {
   UI architecture and save systems.
 </p>
           <div className="hero-buttons">
-            <button onClick={handleDownloadCV} className="btn btn-primary">
+            <button onClick={handleDownloadCV} className=" btn-primary">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />

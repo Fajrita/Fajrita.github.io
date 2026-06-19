@@ -59,12 +59,12 @@ a:hover {
 }
 // Agrega al final de tu main.scss
 .main-content {
-  // padding-top: 80px; // Espacio para el navbar fijo
+   padding-top: 80px; // Espacio para el navbar fijo
   min-height: calc(100vh - 80px);
 }
 
 @media (max-width: 768px) {
   .main-content {
-    // padding-top: 70px;
+     padding-top: 70px;
   }
 }

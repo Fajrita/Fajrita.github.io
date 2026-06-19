@@ -40,11 +40,13 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
-      {/* Logo - Fuera del contenedor, pegado al borde izquierdo */}
+      {/* Logo - Imagen en lugar de texto */}
       <Link to="/" className="navbar-logo">
-        <span className="logo-bracket">&lt;</span>
-        <span className="logo-name">Fajre</span>
-        <span className="logo-bracket">/&gt;</span>
+        <img 
+          src="/images/logo.png" 
+          alt="Fernanda Fajre Logo" 
+          className="logo-image"
+        />
       </Link>
 
       {/* Contenedor para el menú (centrado) y botón móvil */}

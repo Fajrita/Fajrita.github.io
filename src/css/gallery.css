@@ -1,0 +1,454 @@
+/* src/css/gallery.css */
+.gallery-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+/* Header */
+.gallery-header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.gallery-title {
+  font-family: 'Orbitron', monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.title-accent {
+  color: #ef4444;
+}
+
+.gallery-description {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #d4d4d8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.highlight-text {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.tech-highlight {
+  color: #fbbf24;
+  font-weight: 500;
+  background: rgba(251, 191, 36, 0.08);
+  padding: 0.1rem 0.2rem;
+  border-radius: 4px;
+}
+
+/* Filtros */
+.gallery-filters {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.875rem;
+  background: transparent;
+  border: 1px solid #3f3f46;
+  color: #a1a1aa;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.filter-btn.active {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: white;
+}
+
+.filter-count {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: #52525b;
+  margin-left: 1rem;
+}
+
+/* Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid #27272a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #0a0a0c;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+  border-color: #ef4444;
+  box-shadow: 0 8px 25px rgba(239, 68, 68, 0.15);
+}
+
+.gallery-item-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+}
+
+.item-name {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: white;
+  font-weight: 500;
+}
+
+/* ============================================
+   MODAL - COMPLETAMENTE RESPONSIVE
+   ============================================ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease;
+  padding: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 90vh;
+}
+
+/* ============================================
+   TAMAÑOS DEL MODAL SEGÚN ANCHO DE PANTALLA
+   ============================================ */
+
+/* Pantallas grandes (>1100px) - Modal ancho, botones fuera */
+@media (min-width: 1101px) {
+  .modal-content {
+    max-width: 1000px;
+  }
+  
+  .modal-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-prev {
+    left: -60px;
+  }
+  
+  .modal-next {
+    right: -60px;
+  }
+}
+
+/* Pantallas medianas (760px - 1100px) - Modal más angosto, botones dentro */
+@media (min-width: 761px) and (max-width: 1100px) {
+  .modal-content {
+    max-width: 85%;
+  }
+  
+  .modal-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .modal-nav:hover {
+    background: rgba(239, 68, 68, 0.5);
+  }
+  
+  .modal-prev {
+    left: -15px;
+  }
+  
+  .modal-next {
+    right: -15px;
+  }
+}
+
+/* Tablets (480px - 760px) */
+@media (min-width: 481px) and (max-width: 760px) {
+  .modal-content {
+    max-width: 95%;
+  }
+  
+  .modal-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .modal-nav:hover {
+    background: rgba(239, 68, 68, 0.5);
+  }
+  
+  .modal-prev {
+    left: 5px;
+  }
+  
+  .modal-next {
+    right: 5px;
+  }
+}
+
+/* Móviles pequeños (<480px) */
+@media (max-width: 480px) {
+  .modal-content {
+    max-width: 98%;
+  }
+  
+  .modal-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .modal-prev {
+    left: 3px;
+  }
+  
+  .modal-next {
+    right: 3px;
+  }
+}
+
+/* ============================================
+   ESTILOS COMUNES DEL MODAL (para todos los tamaños)
+   ============================================ */
+
+/* Botón cerrar */
+.modal-close {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  transform: rotate(90deg);
+}
+
+/* Botones de navegación - base */
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  display: flex;
+       text-align: center;
+     padding: 0.15rem !important;
+  /* align-items: center; */
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  user-select: none;
+}
+
+.modal-nav:hover {
+  background: rgba(239, 68, 68, 0.4);
+  border-color: #ef4444;
+}
+
+/* Contenedor del contenido del modal */
+.modal-media-container {
+  width: 100%;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-media {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #0a0a0c;
+}
+
+.modal-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.modal-name {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.modal-counter {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: #52525b;
+}
+
+/* ============================================
+   RESPONSIVE PARA EL RESTO DE LA PÁGINA
+   ============================================ */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .gallery-page {
+    padding: 1rem 0.5rem 3rem;
+  }
+
+  .gallery-title {
+    font-size: 1.75rem;
+  }
+
+  .gallery-description {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .filter-count {
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+  }
+
+  .modal-close {
+    top: -30px;
+    font-size: 1.5rem;
+  }
+
+  .modal-media {
+    max-height: 70vh;
+  }
+
+  .modal-name {
+    font-size: 0.75rem;
+  }
+
+  .modal-counter {
+    bottom: -25px;
+    font-size: 0.65rem;
+  }
+
+  .item-name {
+    font-size: 0.65rem;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .gallery-filters {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+  }
+}
