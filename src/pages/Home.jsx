@@ -29,6 +29,7 @@ const featuredProjects = [
 }
 ];
 
+
 const Home = () => {
   const handleDownloadCV = () => {
     const link = document.createElement('a');
