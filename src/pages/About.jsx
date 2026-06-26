@@ -13,18 +13,18 @@ const About = () => {
   const technicalSkills = {
     programming: [
       { name: 'C# / .NET', percentage: 90, description: 'Advanced OOP, design patterns, data structures, LINQ, asynchronous programming' },
-      { name: 'Unity Engine', percentage: 88, description: 'Component-based architecture, Editor scripting, custom tools, performance profiling' },
+      { name: 'Unity Engine', percentage: 100, description: 'Component-based architecture, Editor scripting, custom tools, performance profiling' },
       { name: 'Graphics & VFX', percentage: 75, description: 'Shader Graph, Particle System, VFX Graph, post-processing, lighting optimization' }
     ],
     gameDev: [
       { name: 'Gameplay Programming', percentage: 85, description: 'State machines, AI behavior trees, physics interactions, combat systems' },
-      { name: 'UI/UX Systems', percentage: 82, description: 'UI Toolkit, Canvas optimization, reactive interfaces, input handling' },
+      { name: 'UI/UX Systems', percentage: 70, description: 'UI Toolkit, Canvas optimization, reactive interfaces, input handling' },
       { name: 'Data Management', percentage: 80, description: 'ScriptableObjects, save/load systems, JSON/XML serialization, addressables' }
     ],
     tools: [
-      { name: 'Version Control', percentage: 85, description: 'Git, GitFlow, collaborative workflows, conflict resolution' },
+      { name: 'Version Control', percentage: 100, description: 'Git, GitFlow, collaborative workflows, conflict resolution' },
       { name: 'Project Management', percentage: 75, description: 'Agile/Scrum, Jira, Trello, team coordination, technical leadership' },
-      { name: 'Web & Other', percentage: 70, description: 'HTML5/CSS3, JavaScript, React, Bootstrap, responsive design' }
+      { name: 'Web & Other', percentage: 80, description: 'HTML5/CSS3, JavaScript, React, Bootstrap, responsive design' }
     ]
   };
 
@@ -135,21 +135,25 @@ const About = () => {
             I started as an architect and digital designer, but my passion for technology led me to 
             <span className="highlight-text"> software engineering and game development</span>. 
             Today, I work as a <strong>Unity Programmer</strong> specializing in gameplay systems, 
-            UI architecture, and performance optimization. My background allows me to bridge 
-            creative vision with technical constraints, delivering clean, maintainable code.
+            UI architecture, and performance optimization.
           </p>
           <p className="description-text">
-            As a <strong>Lead Programmer</strong>, I've architected systems for <strong>card games, 
+            As a <strong>Lead Programmer</strong>, I've created systems for <strong>card games, 
             tower defenses, and fighting games</strong> — implementing everything from 
             <strong>ScriptableObject-driven data management</strong> to 
             <strong>complex AI state machines</strong>. I'm proficient in <strong>C#, design patterns, 
             SOLID principles, and component-based architecture</strong>. I also bring experience in 
-            <strong>VFX (Particle System, Shader Graph), UI optimization, and audio integration (Wwise)</strong>.
+            <strong>VFX (Particle System, Shader Graph) and UI optimization</strong>.
           </p>
           <p className="description-text">
             I stay curious about <strong>web technologies (React, Node.js)</strong> and 
             <strong>3D art (Blender)</strong> because I believe great games require understanding 
             the full pipeline. <span className="highlight-text">Code is just another creative medium.</span>
+          </p>
+          <p className="description-text">
+          My favorite games — <strong>Final Fantasy X</strong>, <strong>Slay the Spire</strong>, 
+          <strong>Super Smash Bros</strong>, <strong>Fire Emblem</strong>, <strong>Baba Is You</strong>, 
+          and <strong>The Legend of Zelda</strong> — constantly remind me why I love this industry. 
           </p>
         </div>
       </section>
